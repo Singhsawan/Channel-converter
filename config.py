@@ -28,23 +28,7 @@ FORWARD_MESSAGE = is_enabled((os.environ.get('FORWARD_MESSAGE', "True")), True)
 SOURCE_CODE = os.environ.get("SOURCE_CODE", "https://github.com/Sawansingh24/Channel-Mdisk-Converter")
 USERNAME = os.environ.get("USERNAME", "cw_backup_01")
 HEADER_TEXT = os.environ.get("HEADER_TEXT", '')
-FOOTER_TEXT = os.environ.get("FOOTER_TEXT", '▬▬▬▬▬▬▬▬▬▬
-
-📌 𝘼𝙙𝙪𝙡𝙩 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 
-https://t.me/adult_backup001/3
-
-Join our group-
-https://t.me/b_t_movies
-
-Get latest deals on this channel https://t.me/dealsbazzarr
-▬▬▬▬▬▬▬▬▬▬
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-
-🚦 HOW TO WATCH & DOWNLOAD 🚦  
-https://t.me/how_to_download_channel/4
-
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-Share and support ❤️')
+FOOTER_TEXT = os.environ.get("FOOTER_TEXT", '')
 BANNER_IMAGE = os.environ.get("BANNER_IMAGE", '')
 WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", '')
 LINK_BYPASS = is_enabled((os.environ.get('LINK_BYPASS', "False")), False)
