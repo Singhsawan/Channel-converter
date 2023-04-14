@@ -12,12 +12,12 @@ def is_enabled(value, default):
 API_ID = int(os.environ.get("API_ID", "16445683"))
 API_HASH = os.environ.get("API_HASH", "d0852e13eee2389ff2d9183b00649547")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "6264339891:AAHOaAyEFg3s4Rbl62adJtc3E9GfRg5TsNQ")
-DROPLINK_API = os.environ.get("DROPLINK_API")
+DROPLINK_API = os.environ.get("04ade1b4f9dc0438edaecc969d885a8469eb10b8")
 MDISK_API = os.environ.get("MDISK_API", "aECk7a3hAoWVdkN8Zctq")
 ADMINS = list(int(i.strip()) for i in os.environ.get("ADMINS").split(",")) if os.environ.get("ADMINS") else []
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "Sawansingh24")
 DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Sawansingh24:Sawansingh24@cluster0.uiuhxxj.mongodb.net/?retryWrites=true&w=majority")
-WEBSITE = os.environ.get('WEBSITE')
+WEBSITE = os.environ.get('OmegaLinks.in')
 
 #  Optionnal variables
 INCLUDE_DOMAIN = list(i.strip() for i in os.environ.get("INCLUDE_DOMAIN").split(",")) if os.environ.get("INCLUDE_DOMAIN") else []
