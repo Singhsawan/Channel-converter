@@ -135,7 +135,7 @@ async def reply_markup_handler(message:Message, method_func):
         return reply_markup
 
 
-####################  droplink  ####################
+####################  omegalink  ####################
 async def get_shortlink(link, x=""):
     https = link.split(":")[0]
     if "http" == https:
@@ -143,7 +143,7 @@ async def get_shortlink(link, x=""):
         link = link.replace("http", https)
 
     url = f'{WEBSITE}/api'
-    params = {'api': DROPLINK_API,
+    params = {'api': OMEGALINK_API,
               'url': link,
               'alias': x
               }
@@ -159,8 +159,8 @@ async def get_shortlink(link, x=""):
 
     except Exception as e:
         logger.error(e)
-        links = f'{WEBSITE}/st?api={DROPLINK_API}&url={link}'
-        return await tiny_url_main(links)
+        links = f'{WEBSITE}/st?api={OMEGALINK_API}&url={link}'
+        return await mdisk_url_main(links)
 
 
 async def replace_link(text, x=""):
@@ -171,13 +171,13 @@ async def replace_link(text, x=""):
         long_url = link
         
         # Link Bypass Configuration
-        droplink_url = await is_droplink_url(link)  
+        omegalink_url = await is_omegalink_url(link)  
 
-        if LINK_BYPASS and droplink_url or not droplink_url:
+        if LINK_BYPASS and droplink_url or not omegalink_url:
             # Bypass Droplink URL
-            if LINK_BYPASS and droplink_url:
+            if LINK_BYPASS and omegalink_url:
                 try:
-                    link = await droplink_bypass(link)
+                    link = await omegalink_bypass(link)
                 except Exception as e:
                     logger.exception(e)
 
